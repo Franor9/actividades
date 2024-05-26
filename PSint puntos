@@ -1,0 +1,15 @@
+Proceso Calcular_Puntos
+    Definir partidos_ganados, partidos_empatados, partidos_perdidos, puntos_totales Como Entero
+    
+    Escribir "Ingrese la cantidad de partidos ganados:"
+    Leer partidos_ganados
+    Escribir "Ingrese la cantidad de partidos empatados:"
+    Leer partidos_empatados
+    Escribir "Ingrese la cantidad de partidos perdidos:"
+    Leer partidos_perdidos
+    
+    // Calcular los puntos totales
+    puntos_totales <- (partidos_ganados * 3) + (partidos_empatados * 1) + (partidos_perdidos * 0)
+    
+    Escribir "La cantidad total de puntos acumulados por el equipo es: ", puntos_totales
+FinProceso
