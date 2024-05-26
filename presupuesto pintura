@@ -1,0 +1,19 @@
+Proceso Presupuesto_Pintura
+    Definir altura, ancho, costo_por_m2, area_pared, costo_total Como Real
+    
+    Escribir "Ingrese la altura de la pared en metros:"
+    Leer altura
+    Escribir "Ingrese el ancho de la pared en metros:"
+    Leer ancho
+    Escribir "Ingrese el costo por metro cuadrado:"
+    Leer costo_por_m2
+    
+    // Calcular el área de la pared
+    area_pared <- altura * ancho
+    
+    // Calcular el costo total de la mano de obra
+    costo_total <- area_pared * costo_por_m2
+    
+    Escribir "El área de la pared es: ", area_pared, " metros cuadrados."
+    Escribir "El costo total de la mano de obra es: $", costo_total
+	FinProceso
