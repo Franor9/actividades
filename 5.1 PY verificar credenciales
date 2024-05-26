@@ -1,0 +1,10 @@
+# VerificarCredenciales.py
+# Un sistema verifica si un usuario ha ingresado su nombre y contraseña correctamente para permitir el acceso.
+
+# Solicitar el nombre de usuario y la contraseña
+nombre = input("Ingrese su nombre de usuario: ")
+contrasena = input("Ingrese su contraseña: ")
+
+# Verificar las credenciales
+if nombre == "admin" and contrasena == "1234":
+    print("Acceso concedido.")
