@@ -1,0 +1,11 @@
+# DescuentoMiembro.py
+# Una tienda decide si un cliente obtiene un descuento en su compra en función de si es miembro del programa de fidelidad.
+
+# Solicitar si el usuario es miembro del programa de fidelidad
+es_miembro = input("¿Es usted miembro del programa de fidelidad? (True/False): ") == "True"
+
+# Determinar si el usuario tiene descuento
+if es_miembro:
+    print("Usted tiene un descuento del 10%.")
+else:
+    print("Usted no tiene descuento.")
