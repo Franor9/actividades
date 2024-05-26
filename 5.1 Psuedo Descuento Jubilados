@@ -1,0 +1,31 @@
+Proceso DescuentoLecheJubilados
+	Definir unidades Como Numerica
+    Definir unidades, es_jubilado Como Entero
+    Definir costo_por_unidad, costo_total, descuento Como Real
+    
+    costo_por_unidad <- 1000
+    
+    Escribir "Ingrese la cantidad de unidades de leche que desea comprar:"
+    Leer unidades
+    Escribir "¿Es usted jubilado? (1 para sí, 0 para no):"
+    Leer es_jubilado
+    
+    // Calcular el descuento según la cantidad de unidades
+    Si unidades > 24 Entonces
+        descuento <- 0.15
+		SiNo unidades > 12 Entonces
+        descuento <- 0.10
+    Sino
+        descuento <- 0
+    FinSi
+    
+    // Aplicar el descuento adicional si es jubilado
+    Si es_jubilado = 1 Entonces
+        descuento <- descuento + 0.10
+    FinSi
+    
+    // Calcular el costo total con el descuento
+    costo_total <- (unidades * costo_por_unidad) * (1 - descuento)
+    
+    Escribir "El costo total de la compra es: $", costo_total
+FinProceso
