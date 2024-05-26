@@ -1,0 +1,12 @@
+Algoritmo promedio
+	
+	Escribir "ingresa las 5 calificaciones a promediar." 
+	leer c1;
+	Leer c2;
+	leer c3;
+	leer c4;
+	leer c5;
+	p= (c1+c2+c3+c4+c5)/5
+	escribir "tu promedio es: ",p;
+	
+FinAlgoritmo
