@@ -1,0 +1,9 @@
+# VerificarEdad.py
+# Una aplicación verifica si un usuario es mayor de edad (18 años o más) para permitirle el acceso a contenido exclusivo.
+
+# Solicitar la edad del usuario
+edad = int(input("Ingrese su edad: "))
+
+# Verificar si el usuario es mayor de edad
+if edad >= 18:
+    print("Acceso permitido.")
