@@ -1,0 +1,12 @@
+# DescuentoEnvio.py
+# Un sistema verifica si un usuario puede obtener un descuento en el envío si el total de su compra es mayor a $50 o si tiene una membresía premium.
+
+# Solicitar el total de la compra y si el usuario es miembro premium
+total_compra = float(input("Ingrese el total de la compra: "))
+es_miembro_premium = input("¿Es usted miembro premium? (True/False): ") == "True"
+
+# Determinar si el envío es gratuito
+if total_compra > 50 or es_miembro_premium:
+    print("El envío es gratuito.")
+else:
+    print("El costo del envío es de $5.")
