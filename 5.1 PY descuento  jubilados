@@ -1,0 +1,28 @@
+# DescuentoLecheJubilados.py
+# Una despensa vende leche a $1000 por litro. Si el cliente compra más de 12 unidades y hasta 24, tiene un 10% de descuento.
+# Si compra más de 24 unidades, el descuento es del 15%. Además, si es jubilado, obtiene un 10% adicional de descuento.
+
+# Definir el costo por unidad de leche
+costo_por_unidad = 1000
+
+# Solicitar la cantidad de unidades y si el cliente es jubilado
+unidades = int(input("Ingrese la cantidad de unidades de leche que desea comprar: "))
+es_jubilado = int(input("¿Es usted jubilado? (1 para sí, 0 para no): "))
+
+# Calcular el descuento según la cantidad de unidades
+if unidades > 24:
+    descuento = 0.15
+elif unidades > 12:
+    descuento = 0.10
+else:
+    descuento = 0
+
+# Aplicar el descuento adicional si es jubilado
+if es_jubilado == 1:
+    descuento += 0.10
+
+# Calcular el costo total con el descuento
+costo_total = (unidades * costo_por_unidad) * (1 - descuento)
+
+# Mostrar el costo total de la compra
+print("El costo total de la compra es: $", costo_total)
