@@ -1,0 +1,12 @@
+Proceso VerificarCredenciales
+    Definir nombre, contrasena Como Cadena
+    
+    Escribir "Ingrese su nombre de usuario:"
+    Leer nombre
+    Escribir "Ingrese su contraseña:"
+    Leer contrasena
+    
+    Si nombre = "admin" Y contrasena = "1234" Entonces
+        Escribir "Acceso concedido."
+    FinSi
+FinProceso
