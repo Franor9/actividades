@@ -1,0 +1,17 @@
+# calcular_puntos.py
+
+# Solicitar la cantidad de partidos ganados, empatados y perdidos al usuario
+print("Ingrese la cantidad de partidos ganados:")
+partidos_ganados = int(input())
+
+print("Ingrese la cantidad de partidos empatados:")
+partidos_empatados = int(input())
+
+print("Ingrese la cantidad de partidos perdidos:")
+partidos_perdidos = int(input())
+
+# Calcular los puntos totales
+puntos_totales = (partidos_ganados * 3) + (partidos_empatados * 1) + (partidos_perdidos * 0)
+
+# Mostrar la cantidad total de puntos acumulados
+print("La cantidad total de puntos acumulados por el equipo es:", puntos_totales)
