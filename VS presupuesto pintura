@@ -1,0 +1,21 @@
+# presupuesto_pintura.py
+
+# Solicitar las dimensiones de la pared y el costo por metro cuadrado al usuario
+print("Ingrese la altura de la pared en metros:")
+altura = float(input())
+
+print("Ingrese el ancho de la pared en metros:")
+ancho = float(input())
+
+print("Ingrese el costo por metro cuadrado:")
+costo_por_m2 = float(input())
+
+# Calcular el área de la pared
+area_pared = altura * ancho
+
+# Calcular el costo total de la mano de obra
+costo_total = area_pared * costo_por_m2
+
+# Mostrar el área de la pared y el costo total de la mano de obra
+print("El área de la pared es:", area_pared, "metros cuadrados.")
+print("El costo total de la mano de obra es: $", costo_total)
