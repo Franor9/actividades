@@ -1,0 +1,12 @@
+Proceso DescuentoMiembro
+    Definir es_miembro Como Logico
+    
+    Escribir "¿Es usted miembro del programa de fidelidad? (Verdadero/Falso):"
+    Leer es_miembro
+    
+    Si es_miembro Entonces
+        Escribir "Usted tiene un descuento del 10%."
+    SiNo
+        Escribir "Usted no tiene descuento."
+    FinSi
+FinProceso
