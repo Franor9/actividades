@@ -1,0 +1,15 @@
+Proceso DescuentoEnvio
+    Definir total_compra Como Real
+    Definir es_miembro_premium Como Logico
+    
+    Escribir "Ingrese el total de la compra:"
+    Leer total_compra
+    Escribir "¿Es usted miembro premium? (Verdadero/Falso):"
+    Leer es_miembro_premium
+    
+    Si total_compra > 50 O es_miembro_premium Entonces
+        Escribir "El envío es gratuito."
+    SiNo
+        Escribir "El costo del envío es de $5."
+    FinSi
+FinProceso
